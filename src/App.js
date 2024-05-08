@@ -36,13 +36,17 @@ function App() {
     }
   }
 
+  const handleCartClearance = () => {
+    setCartItems([]);
+  }
+
   return (
     <div className="App">
       <Router>
-        <Header/>
+        <Header cartItems={cartItems}/>
         <Routes>
           <Route path="/" element={<Products productItems={productItems} handleAddProduct={handleAddProduct}/>}/>
-          <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct}/>}/>
+          <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>}/>
         </Routes>
       </Router>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Cart.css"
 
-function Cart({cartItems, handleAddProduct, handleRemoveProduct}) {
+function Cart({cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance}) {
 
     const totalPrice = cartItems.reduce(
         (price, item) => price + item.quantity * item.price, 0
@@ -10,6 +10,11 @@ function Cart({cartItems, handleAddProduct, handleRemoveProduct}) {
   return (
     <div className='cart-items'>
         <div className='items-header'>Cart Items</div>
+        <div className='clear-cart'>
+            {cartItems.length >=1 && (
+                <button className='clear-button' onClick={handleCartClearance}>Clear Cart</button>
+            )}
+        </div>
 
         {cartItems.length === 0 && (<div className='empty-cart'>No items are added</div>)}
 
@@ -29,9 +34,9 @@ function Cart({cartItems, handleAddProduct, handleRemoveProduct}) {
             ))}
         </div>
         <div className='total-price'>
-            Total price
+            Total price 
             <div className='cart-total'>
-                KSH{totalPrice}
+                KSH:{totalPrice}
             </div>
         </div>
     </div>

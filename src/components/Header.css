@@ -32,3 +32,6 @@
 .links ul li a:hover{
     color: #fffc3c;
 }
+.review {
+    display: flex;
+}

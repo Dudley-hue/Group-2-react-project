@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // import data from '../Data';
 import { Link } from "react-router-dom";
 
+
 function Products({ handleAddProduct, productItems }) {
     const [category, setCategory] = useState('all');
 
@@ -12,6 +13,10 @@ function Products({ handleAddProduct, productItems }) {
 
     // const filteredProducts = category === 'all' ? data.productItems : data.productItems.filter(item => item.category === category);
     const filteredProducts = category === 'all' ? productItems : productItems.filter(item => item.category === category);
+
+    const [rating, setRating] = useState(null);
+    const [hover, setHover] = useState(null);
+    
     return (
         <div>
             <div className="categorybtns">
@@ -29,6 +34,18 @@ function Products({ handleAddProduct, productItems }) {
                             <h3 className='prod-name'>{productitem.name}</h3>
                         </div>
                         <div className='price'>KSH{productitem.price}</div>
+                        {[...Array(5)].map((star, index) => {
+                            const currentRating = index +1;
+                           return (
+                            <label>
+                                <input type="radio" name="rating" value={currentRating} onClick={() => setRating(currentRating)}/>
+                                <i className="fa-regular fa-star"  color={currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9"} onMouseEnter={()=>setHover(currentRating)} onMouseLeave={()=>setHover(null)}/>
+                                
+                            </label>
+                           )
+                        })}
+                        
+                        
                         <div>
                         <Link to={`/product/${productitem.id}`} className="btn btn-primary">Details</Link>
                         </div>

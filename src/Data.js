@@ -38,7 +38,7 @@ const data ={
             id: 5,
             name: "T-Shirts",
             price: 999,
-            image:tshirts,
+            image:"https://pictureperfectproducts.com.au/wp-content/uploads/2023/04/mens-cotton-tshirts-picture-perfect-products.png",
             category: "children"
         }
     ]

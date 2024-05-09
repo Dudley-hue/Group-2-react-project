@@ -1,6 +1,7 @@
 import "./Products.css"
 import React, { useState } from 'react';
 import data from '../Data';
+import { Link } from "react-router-dom";
 
 function Products({ handleAddProduct }) {
     const [category, setCategory] = useState('all');
@@ -19,7 +20,7 @@ function Products({ handleAddProduct }) {
             </div>
             <div className='products'>
                 {filteredProducts.map((productitem) => (
-                    <div className='card'>
+                    <div className='card' key={productitem.id}>
                         <div>
                             <img className='prod-image' src={productitem.image} alt={productitem.name} />
                         </div>
@@ -27,6 +28,9 @@ function Products({ handleAddProduct }) {
                             <h3 className='prod-name'>{productitem.name}</h3>
                         </div>
                         <div className='price'>KSH{productitem.price}</div>
+                        <div>
+                        <Link to={`/product/${productitem.id}`} className="btn btn-primary">Details</Link>
+                        </div>
                         <div>
                             <button className='product-btn' onClick={() => handleAddProduct(productitem)}>Add to Cart</button>
                         </div>

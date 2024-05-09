@@ -6,6 +6,7 @@ import Products from './components/Products';
 import Cart from './components/Cart';
 import Review from './components/Review'; // Assuming this is your Review component
 import { useState } from 'react';
+import ProductDetails from './components/ProductDetails';
 import reviewData from './components/Reviewdata';
 
 function App() {
@@ -52,25 +53,8 @@ function App() {
       <Router>
         <Header cartItems={cartItems} />
         <Routes>
-          <Route
-            path="/"
-            element={<Products productItems={productItems} handleAddProduct={handleAddProduct} />}
-          />
-          <Route
-            path="/cart"
-            element={
-              <Cart
-                cartItems={cartItems}
-                handleAddProduct={handleAddProduct}
-                handleRemoveProduct={handleRemoveProduct}
-                handleCartClearance={handleCartClearance}
-              />
-            }
-          />
-          <Route
-            path="/reviews"
-            element={<Review reviewData={reviewData} />} 
-          />
+          <Route path="/" element={<Products productItems={productItems} handleAddProduct={handleAddProduct}/>}/>
+          <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>}/>
         </Routes>
       </Router>
     </div>

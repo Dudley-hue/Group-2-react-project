@@ -1,0 +1,167 @@
+[
+    {
+      "id": "1",
+      "name": "Cotton T-Shirt",
+      "category": "adult",
+      "gender": "unisex",
+      "brand": "H&M",
+      "description": "Comfortable cotton t-shirt for everyday wear",
+      "size": "M",
+      "price": 19.99,
+      "image": "https://pictureperfectproducts.com.au/wp-content/uploads/2023/04/mens-cotton-tshirts-picture-perfect-products.png"
+    },
+    {
+      "id": "2",
+      "name": "Denim Jeans",
+      "category": "adult",
+      "gender": "male",
+      "brand": "Levi's",
+      "description": "Classic denim jeans for men",
+      "size": "32x32",
+      "price": 49.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJehbIDjW-rsjnhvMnP9JL4Rf602iKRJSpjw&s"
+    },
+    {
+      "id": "3",
+      "name": "Summer Dress",
+      "category": "adult",
+      "gender": "female",
+      "brand": "Zara",
+      "description": "Light and breezy dress perfect for summer days",
+      "size": "S",
+      "price": 39.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOD2QD1N7En5bUfYsIyUGMR_LsRCTwzs691w&s"
+    },
+    {
+      "id": "4",
+      "name": "Kids' Hoodie",
+      "category": "child",
+      "gender": "unisex",
+      "brand": "Gap Kids",
+      "description": "Warm and cozy hoodie for kids",
+      "size": "8",
+      "price": 29.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BGlwZj4PKnj_Q2pgzvf8Axf4pBjeYvUaHw&s"
+    },
+    {
+      "id": "5",
+      "name": "Leather Jacket",
+      "category": "adult",
+      "gender": "male",
+      "brand": "Zara",
+      "description": "Stylish leather jacket for men",
+      "size": "L",
+      "price": 99.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQguwVnKIcIoa2NUiPJt9jL77O45KH2tSyyOA&s"
+    },
+    {
+      "id": "6",
+      "name": "Winter Coat",
+      "category": "adult",
+      "gender": "female",
+      "brand": "The North Face",
+      "description": "Warm and waterproof coat for winter",
+      "size": "M",
+      "price": 149.99,
+      "image": "https://images-cdn.ubuy.co.in/653a4397d8e67b48ab4cc018-beyove-womens-winter-coats-jacket.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Kids' Sneakers",
+      "category": "child",
+      "gender": "unisex",
+      "brand": "Nike",
+      "description": "Sporty sneakers for active kids",
+      "size": "6",
+      "price": 59.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqt5NXQfXfrCmHvyan8x5_U2Mol_heaOFl5g&s"
+    },
+    {
+      "id": "8",
+      "name": "Knit Sweater",
+      "category": "adult",
+      "gender": "female",
+      "brand": "H&M",
+      "description": "Cozy knit sweater for chilly days",
+      "size": "XS",
+      "price": 29.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3t0hAjX1xZ4szd_tSdLEiLUhY2tAR2LG7IA&s"
+    },
+    {
+      "id": "9",
+      "name": "Cargo Shorts",
+      "category": "adult",
+      "gender": "male",
+      "brand": "Old Navy",
+      "description": "Functional cargo shorts with multiple pockets",
+      "size": "34",
+      "price": 24.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqb9h_ytrpOfnqNcmyHrl_H89v-9mYx0Mqng&s"
+    },
+    {
+      "id": "10",
+      "name": "Kids' Rain Jacket",
+      "category": "child",
+      "gender": "unisex",
+      "brand": "Columbia",
+      "description": "Waterproof rain jacket for kids",
+      "size": "10",
+      "price": 39.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9xYL7qlEUUCxAGB6i3szFD7i_3M0ez5QFw&s"
+    },
+    {
+      "id": "11",
+      "name": "Graphic Tee",
+      "category": "adult",
+      "gender": "unisex",
+      "brand": "Urban Outfitters",
+      "description": "Cool graphic tee for casual outings",
+      "size": "L",
+      "price": 24.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ba4ZhWmYsmwpy0-9_9xmqnUluVFhOLrn3g&s"
+    },
+    {
+      "id": "12",
+      "name": "Denim Skirt",
+      "category": "adult",
+      "gender": "female",
+      "brand": "Forever 21",
+      "description": "Versatile denim skirt for women",
+      "size": "M",
+      "price": 29.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezO5Qu-GxtUjL5zLWH3ekbVYHMDItV5XISA&s"
+    },
+    {
+      "id": "13",
+      "name": "Polo Shirt",
+      "category": "adult",
+      "gender": "male",
+      "brand": "Ralph Lauren",
+      "description": "Classic polo shirt for a smart-casual look",
+      "size": "L",
+      "price": 69.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpz7ysf3Zo4yKu-IhC20kqjRiwXDdl7ZNbzA&s"
+    },
+    {
+      "id": "14",
+      "name": "Kids' Pajamas",
+      "category": "child",
+      "gender": "unisex",
+      "brand": "Carters",
+      "description": "Cute and comfortable pajamas for bedtime",
+      "size": "4T",
+      "price": 19.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpkrIw0FmpDualjinV4TwpGP2FvPHsvLHPQ&s"
+    },
+    {
+      "id": "15",
+      "name": "Hiking Boots",
+      "category": "adult",
+      "gender": "unisex",
+      "brand": "Merrell",
+      "description": "Durable hiking boots for outdoor adventures",
+      "size": "9",
+      "price": 129.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GBxekSxQw6lyYmv-9Kv6uTcTAiEeXlTH4Q&s"
+    }
+  ]

@@ -4,11 +4,12 @@ import './Search.css';
 function Search() {
     return (
         <div className='search-box'>
-            {/* <i className='fa fa-search'></i> */}
+            
             <input
                 text='text'
                 placeholder='Search here...'
             />
+            <button><i className='fa fa-search'></i></button>
         </div>
     )
 }

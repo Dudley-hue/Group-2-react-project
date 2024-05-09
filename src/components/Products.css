@@ -56,3 +56,25 @@
 .product-btn:active{
     transform: translateY(2px);
 }
+.category-btn{
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(194, 70, 28);
+    color: white;
+    width: 30%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 15px auto;
+}
+.category-btn:hover{
+    background-color: rgb(121, 21, 74);
+}
+.category-btn:active{
+    transform: translateY(2px);
+}

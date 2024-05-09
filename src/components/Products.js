@@ -1,6 +1,5 @@
 import "./Products.css"
 import React, { useState } from 'react';
-// import data from '../Data';
 import { Link } from "react-router-dom";
 
 function Products({ handleAddProduct, productItems }) {
@@ -16,8 +15,8 @@ function Products({ handleAddProduct, productItems }) {
         <div>
             <div>
                 <button className='category-btn' onClick={() => handleCategoryFilter('all')}>All</button>
-                <button className='category-btn' onClick={() => handleCategoryFilter('children')}>Children</button>
-                <button className='category-btn' onClick={() => handleCategoryFilter('adults')}>Adults</button>
+                <button className='category-btn' onClick={() => handleCategoryFilter('child')}>Children</button>
+                <button className='category-btn' onClick={() => handleCategoryFilter('adult')}>Adults</button>
             </div>
             <div className='products'>
                 {filteredProducts.map((productitem) => (
@@ -28,7 +27,7 @@ function Products({ handleAddProduct, productItems }) {
                         <div>
                             <h3 className='prod-name'>{productitem.name}</h3>
                         </div>
-                        <div className='price'>KSH{productitem.price}</div>
+                        <div className='price'>$ {productitem.price}</div>
                         <div>
                         <Link to={`/product/${productitem.id}`} className="btn btn-primary">Details</Link>
                         </div>

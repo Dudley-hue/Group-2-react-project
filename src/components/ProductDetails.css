@@ -20,3 +20,26 @@
 .btn:active{
     transform: translateY(2px);
 }
+.detail-card{
+        width: 250px;
+        height: 450px;
+        border: 1px solid black;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+        margin: 40px 20px;
+        background-color: white;
+}
+.detail-price{
+    margin: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 10px;
+}
+.category{
+    padding-top: 5px;
+}
+.gender{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

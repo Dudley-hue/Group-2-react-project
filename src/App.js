@@ -8,6 +8,7 @@ import Review from './components/Review'; // Assuming this is your Review compon
 import { useEffect, useState } from 'react';
 import ProductDetails from './components/ProductDetails';
 import reviewData from './components/Reviewdata';
+import AddProduct from './components/AddProduct';
 
 const API = "http://localhost:3000/cloth"
 
@@ -61,6 +62,7 @@ function App() {
       <Router>
         <Header cartItems={cartItems} />
         <Routes>
+          <Route path="/addproduct" element={<AddProduct />}/>
           <Route path="/" element={<Products productItems={productItems} handleAddProduct={handleAddProduct}/>}/>
           <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>}/>
         </Routes>

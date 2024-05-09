@@ -25,6 +25,11 @@ function Header({ cartItems }) {
           </ul>
           <ul>
             <li>
+              <Link to="/addproduct">Add Product</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
               <Link to="/reviews">
                 <i className="fas fa-eye" /> Reviews {/* Eye icon */}
               </Link>

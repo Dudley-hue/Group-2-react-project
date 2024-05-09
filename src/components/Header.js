@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Header.css";
 import { Link } from 'react-router-dom';
-import Search from './Search';
 
 function Header({ cartItems }) {
   return (
@@ -13,9 +12,6 @@ function Header({ cartItems }) {
               Shopping Hub
             </Link>
           </h1>
-        </div>
-        <div>
-          <Search />
         </div>
         <div className='links'>
           <ul>

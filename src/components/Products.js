@@ -1,28 +1,30 @@
 import "./Products.css"
 import React, { useState } from 'react';
-// import data from '../Data';
 import { Link } from "react-router-dom";
-
+import Search from "./Search";
 
 function Products({ handleAddProduct, productItems }) {
     const [category, setCategory] = useState('all');
+    const [searchInput, setSearchInput] = useState('');
 
     const handleCategoryFilter = (category) => {
         setCategory(category);
     };
 
     // const filteredProducts = category === 'all' ? data.productItems : data.productItems.filter(item => item.category === category);
-    const filteredProducts = category === 'all' ? productItems : productItems.filter(item => item.category === category);
-
+    const filteredProducts = productItems.filter(item => {
+        return(category === 'all' || item.category === category) &&
+        (item.brand.toLowerCase().includes(searchInput.toLowerCase()))
+    })
     const [rating, setRating] = useState(null);
     const [hover, setHover] = useState(null);
-    
     return (
         <div>
-            <div className="categorybtns">
+            <Search searchInput={searchInput} setSearchInput={setSearchInput}/>
+            <div>
                 <button className='category-btn' onClick={() => handleCategoryFilter('all')}>All</button>
-                <button className='category-btn' onClick={() => handleCategoryFilter('children')}>Children</button>
-                <button className='category-btn' onClick={() => handleCategoryFilter('adults')}>Adults</button>
+                <button className='category-btn' onClick={() => handleCategoryFilter('child')}>Children</button>
+                <button className='category-btn' onClick={() => handleCategoryFilter('adult')}>Adults</button>
             </div>
             <div className='products'>
                 {filteredProducts.map((productitem) => (

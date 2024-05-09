@@ -1,5 +1,4 @@
 import './App.css';
-import data from './Data';
 import Header from './components/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Products from './components/Products';
@@ -65,6 +64,7 @@ function App() {
           <Route path="/addproduct" element={<AddProduct />}/>
           <Route path="/" element={<Products productItems={productItems} handleAddProduct={handleAddProduct}/>}/>
           <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>}/>
+          <Route path="/product/:id" element={<ProductDetails/>}/>
         </Routes>
       </Router>
     </div>

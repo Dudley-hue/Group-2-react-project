@@ -35,7 +35,8 @@ function Products({ handleAddProduct, productItems }) {
                         <div>
                             <h3 className='prod-name'>{productitem.name}</h3>
                         </div>
-                        <div className='price'>KSH{productitem.price}</div>
+                        <p className="brand">Brand: {productitem.brand}</p>
+                        <div className='price'>$ {productitem.price}</div>
                         {[...Array(5)].map((star, index) => {
                             const currentRating = index +1;
                            return (

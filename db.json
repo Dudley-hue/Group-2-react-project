@@ -164,6 +164,17 @@
       "size": "9",
       "price": 129.99,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GBxekSxQw6lyYmv-9Kv6uTcTAiEeXlTH4Q&s"
+    },
+    {
+      "id": "748f",
+      "name": "Kid's onesie",
+      "category": "child",
+      "gender": "unisex",
+      "brand": "H&M",
+      "description": "Warm children onesie",
+      "size": "S",
+      "price": "15.00",
+      "image": "https://www.kidsonesies.co.uk/cdn/shop/products/28_1024x1024.jpg?v=1604850957"
     }
   ]
 }

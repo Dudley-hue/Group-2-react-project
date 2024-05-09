@@ -1,16 +1,17 @@
 import "./Products.css"
 import React, { useState } from 'react';
-import data from '../Data';
+// import data from '../Data';
 import { Link } from "react-router-dom";
 
-function Products({ handleAddProduct }) {
+function Products({ handleAddProduct, productItems }) {
     const [category, setCategory] = useState('all');
 
     const handleCategoryFilter = (category) => {
         setCategory(category);
     };
 
-    const filteredProducts = category === 'all' ? data.productItems : data.productItems.filter(item => item.category === category);
+    // const filteredProducts = category === 'all' ? data.productItems : data.productItems.filter(item => item.category === category);
+    const filteredProducts = category === 'all' ? productItems : productItems.filter(item => item.category === category);
     return (
         <div>
             <div>

@@ -5,13 +5,21 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Products from './components/Products';
 import Cart from './components/Cart';
 import Review from './components/Review'; // Assuming this is your Review component
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProductDetails from './components/ProductDetails';
 import reviewData from './components/Reviewdata';
 
+const API = "http://localhost:3000/cloth"
+
 function App() {
-  const { productItems } = data;
+  // const { productItems } = data;
+  const [productItems, setproductItems] = useState([]);
   const [cartItems, setCartItems] = useState([]);
+
+  useEffect(()=> {fetch(API)
+    .then((res) => res.json())
+    .then(setproductItems)
+  }, []);
 
   const handleAddProduct = (product) => {
     const productExist = cartItems.find((item) => item.id === product.id);

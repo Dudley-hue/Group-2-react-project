@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/groupproject/static/css/main.e9064cfd.css",
-    "main.js": "/groupproject/static/js/main.eaa42547.js",
-    "static/js/453.8c20be8a.chunk.js": "/groupproject/static/js/453.8c20be8a.chunk.js",
-    "index.html": "/groupproject/index.html",
-    "main.e9064cfd.css.map": "/groupproject/static/css/main.e9064cfd.css.map",
-    "main.eaa42547.js.map": "/groupproject/static/js/main.eaa42547.js.map",
-    "453.8c20be8a.chunk.js.map": "/groupproject/static/js/453.8c20be8a.chunk.js.map"
+    "main.css": "/Group-2-react-project/static/css/main.e9064cfd.css",
+    "main.js": "/Group-2-react-project/static/js/main.c4140b3e.js",
+    "static/js/453.8c20be8a.chunk.js": "/Group-2-react-project/static/js/453.8c20be8a.chunk.js",
+    "index.html": "/Group-2-react-project/index.html",
+    "main.e9064cfd.css.map": "/Group-2-react-project/static/css/main.e9064cfd.css.map",
+    "main.c4140b3e.js.map": "/Group-2-react-project/static/js/main.c4140b3e.js.map",
+    "453.8c20be8a.chunk.js.map": "/Group-2-react-project/static/js/453.8c20be8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9064cfd.css",
-    "static/js/main.eaa42547.js"
+    "static/js/main.c4140b3e.js"
   ]
 }

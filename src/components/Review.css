@@ -1,0 +1,14 @@
+.review {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review h2 {
+  color: #333;
+}
+
+.review p {
+  margin: 5px 0;
+}

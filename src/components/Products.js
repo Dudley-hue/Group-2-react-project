@@ -13,7 +13,7 @@ function Products({ handleAddProduct, productItems }) {
     const filteredProducts = category === 'all' ? productItems : productItems.filter(item => item.category === category);
     return (
         <div>
-            <div>
+            <div className="categorybtns">
                 <button className='category-btn' onClick={() => handleCategoryFilter('all')}>All</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('child')}>Children</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('adult')}>Adults</button>

@@ -165,5 +165,16 @@
       "price": 129.99,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GBxekSxQw6lyYmv-9Kv6uTcTAiEeXlTH4Q&s"
     }
+  ],
+  "reviews":[
+    {
+      "cotton": 1
+    },
+    {
+      "cotton": 1
+    },
+    {
+      "cotton": 1
+    }
   ]
 }

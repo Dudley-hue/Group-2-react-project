@@ -3,11 +3,10 @@ import Header from './components/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Products from './components/Products';
 import Cart from './components/Cart';
-import Review from './components/Review';
 import { useEffect, useState } from 'react';
 import ProductDetails from './components/ProductDetails';
-import reviewData from './components/Reviewdata';
 import AddProduct from './components/AddProduct';
+
 
 const API = "http://localhost:3000/cloth"
 
@@ -61,7 +60,7 @@ function App() {
       <Router>
         <Header cartItems={cartItems} />
         <Routes>
-
+          <Route path="/addproduct" element={<AddProduct/>}/>
           <Route path="/" element={<Products productItems={productItems} handleAddProduct={handleAddProduct}/>}/>
           <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>}/>
           <Route path="/product/:id" element={<ProductDetails/>}/>

@@ -164,50 +164,6 @@
       "size": "9",
       "price": 129.99,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GBxekSxQw6lyYmv-9Kv6uTcTAiEeXlTH4Q&s"
-    },
-    {
-      "id": "748f",
-      "name": "Kid's onesie",
-      "category": "child",
-      "gender": "unisex",
-      "brand": "H&M",
-      "description": "Warm children onesie",
-      "size": "S",
-      "price": "15.00",
-      "image": "https://www.kidsonesies.co.uk/cdn/shop/products/28_1024x1024.jpg?v=1604850957"
-    },
-    {
-      "id": "1150",
-      "name": "Cozy Sweatpants",
-      "category": "adult",
-      "gender": "unisex",
-      "brand": "H&M",
-      "description": "This are comfortable warm sweatpants",
-      "size": "M",
-      "price": "15.00",
-      "image": "https://watchwear.eu/wp-content/uploads/2023/02/OrganicSweatpants_Faded_Grey-CS1011.jpg"
-    },
-    {
-      "id": "9392",
-      "name": "Dinner dress",
-      "category": "adult",
-      "gender": "Female",
-      "brand": "Valentino",
-      "description": "Classy dinner body hugging dinner dress",
-      "size": "12",
-      "price": "120.00",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqkDJkA7XH0M0O-U17-XFVLc4kOzzn-ervA&s"
-    }
-  ],
-  "reviews":[
-    {
-      "cotton": 1
-    },
-    {
-      "cotton": 1
-    },
-    {
-      "cotton": 1
     }
   ]
 }

@@ -31,16 +31,16 @@ function AddProduct() {
         }
         addingToDb(productObj)
 
-        setProduct({
-            name: "",
-            category: "",
-            gender: "",
-            brand: "",
-            description: "",
-            size: "",
-            price: "",
-            image: ""
-        });
+        // setProduct({
+        //     name: "",
+        //     category: "",
+        //     gender: "",
+        //     brand: "",
+        //     description: "",
+        //     size: "",
+        //     price: "",
+        //     image: ""
+        // });
     }
 
     function addingToDb(productObj) {
@@ -104,7 +104,7 @@ function AddProduct() {
                     </div>
                     <div className='button'>
                         <button className='submit' >Add Product</button>
-                        
+
 
                     </div>
                 </form>

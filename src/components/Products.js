@@ -1,3 +1,4 @@
+import "./Products.css"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Search from "./Search";
@@ -5,30 +6,26 @@ import Search from "./Search";
 function Products({ handleAddProduct, productItems }) {
     const [category, setCategory] = useState('all');
     const [searchInput, setSearchInput] = useState('');
-    const [rating, setRating] = useState(null);
-    const [hover, setHover] = useState(null);
 
     const handleCategoryFilter = (category) => {
         setCategory(category);
     };
 
-    const handleSearchInputChange = (input) => {
-        setSearchInput(input);
-    };
-
+    // const filteredProducts = category === 'all' ? data.productItems : data.productItems.filter(item => item.category === category);
     const filteredProducts = productItems.filter(item => {
-        return (category === 'all' || item.category === category) &&
-               (item.brand.toLowerCase().includes(searchInput.toLowerCase()));
-    });
-
+        return(category === 'all' || item.category === category) &&
+        (item.brand.toLowerCase().includes(searchInput.toLowerCase()))
+    })
+    const [rating, setRating] = useState(null);
+    const [hover, setHover] = useState(null);
     return (
         <div>
-            <div>
+            <Search setSearchInput={setSearchInput}/>
+                <div className="categorybtns">
                 <button className='category-btn' onClick={() => handleCategoryFilter('all')}>All</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('child')}>Children</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('adult')}>Adults</button>
             </div>
-            <Search handleSearch={handleSearchInputChange} />
             <div className='products'>
                 {filteredProducts.map((productitem) => (
                     <div className='card' key={productitem.id}>
@@ -40,20 +37,20 @@ function Products({ handleAddProduct, productItems }) {
                         </div>
                         <p className="brand">Brand: {productitem.brand}</p>
                         <div className='price'>$ {productitem.price}</div>
+                        {[...Array(5)].map((star, index) => {
+                            const currentRating = index +1;
+                           return (
+                            <label>
+                                <input type="radio" name="rating" value={currentRating} onClick={() => setRating(currentRating)}/>
+                                <i className="fa-regular fa-star"  color={currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9"} onMouseEnter={()=>setHover(currentRating)} onMouseLeave={()=>setHover(null)}/>
+                                
+                            </label>
+                           )
+                        })}
+                        
+                        
                         <div>
-                            {[...Array(5)].map((star, index) => {
-                                const currentRating = index + 1;
-                                return (
-                                    <label key={index}>
-                                        <input type="radio" name="rating" value={currentRating} onClick={() => setRating(currentRating)} />
-                                        <i className="fa-regular fa-star" style={{ color: currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9" }}
-                                            onMouseEnter={() => setHover(currentRating)} onMouseLeave={() => setHover(null)} />
-                                    </label>
-                                );
-                            })}
-                        </div>
-                        <div>
-                            <Link to={`/product/${productitem.id}`} className="btn btn-primary">Details</Link>
+                        <Link to={`/product/${productitem.id}`} className="btn btn-primary">Details</Link>
                         </div>
                         <div>
                             <button className='product-btn' onClick={() => handleAddProduct(productitem)}>Add to Cart</button>
@@ -62,7 +59,7 @@ function Products({ handleAddProduct, productItems }) {
                 ))}
             </div>
         </div>
-    );
+    )
 }
 
-export default Products;
+export default Products

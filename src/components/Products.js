@@ -20,8 +20,8 @@ function Products({ handleAddProduct, productItems }) {
     const [hover, setHover] = useState(null);
     return (
         <div>
-            <Search searchInput={searchInput} setSearchInput={setSearchInput}/>
-            <div>
+            <Search setSearchInput={setSearchInput}/>
+                <div className="categorybtns">
                 <button className='category-btn' onClick={() => handleCategoryFilter('all')}>All</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('child')}>Children</button>
                 <button className='category-btn' onClick={() => handleCategoryFilter('adult')}>Adults</button>
